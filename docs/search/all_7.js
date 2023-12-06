@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pin_0',['pin',['../class_sensor.html#a0efecf34431610766469857f25e113da',1,'Sensor']]]
+  ['hardware_20design_0',['Hardware design',['../index.html#autotoc_md2',1,'']]],
+  ['have_20fun_1',['Have fun!',['../index.html#autotoc_md8',1,'']]]
 ];
