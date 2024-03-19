@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['easyc_0',['EasyC',['../class_easy_c.html#a2ea672a225a32eab52c2b20733fd26bd',1,'EasyC']]]
+  ['begin_0',['begin',['../class_soldered___b_m_p388.html#ac2d331ff98848f311907e68e68e5af55',1,'Soldered_BMP388::begin()'],['../class_b_m_p388___d_e_v.html#ac0cdef635a600ba7beaf98bdeb20aaae',1,'BMP388_DEV::begin(Mode mode=SLEEP_MODE, Oversampling presOversampling=OVERSAMPLING_X16, Oversampling tempOversampling=OVERSAMPLING_X2, IIRFilter iirFilter=IIR_FILTER_OFF, TimeStandby timeStandby=TIME_STANDBY_5MS)'],['../class_b_m_p388___d_e_v.html#ae6eb1e842bf2964732616731378d2a8d',1,'BMP388_DEV::begin(Mode mode, uint8_t addr)'],['../class_b_m_p388___d_e_v.html#a9a919850929834f1c9cd37931d997811',1,'BMP388_DEV::begin(uint8_t addr)']]],
+  ['bmp388_5fcompensate_5fpress_1',['bmp388_compensate_press',['../class_b_m_p388___d_e_v.html#a0efdc3d42d8ee9a4ad42d8232106d27a',1,'BMP388_DEV']]],
+  ['bmp388_5fcompensate_5ftemp_2',['bmp388_compensate_temp',['../class_b_m_p388___d_e_v.html#a68f6f6b9210bfdf43353d729b8e5f48e',1,'BMP388_DEV']]],
+  ['bmp388_5fdev_3',['BMP388_DEV',['../class_b_m_p388___d_e_v.html#a3571d4b5b4654ee4e14292a7723c67a3',1,'BMP388_DEV::BMP388_DEV(TwoWire &amp;twoWire=Wire)'],['../class_b_m_p388___d_e_v.html#a13ce4f71ce00fbfbfbf38474acb4e180',1,'BMP388_DEV::BMP388_DEV(uint8_t sda, uint8_t scl, TwoWire &amp;twoWire=Wire)'],['../class_b_m_p388___d_e_v.html#a371df80496d845de61bf0de2ad221c98',1,'BMP388_DEV::BMP388_DEV(uint8_t cs)'],['../class_b_m_p388___d_e_v.html#a13ce4f71ce00fbfbfbf38474acb4e180',1,'BMP388_DEV::BMP388_DEV(uint8_t sda, uint8_t scl, TwoWire &amp;twoWire=Wire)'],['../class_b_m_p388___d_e_v.html#a5fc7f57b676ea429b105557c3452a189',1,'BMP388_DEV::BMP388_DEV(uint8_t cs, uint8_t spiPort, SPIClass &amp;spiClass)']]]
 ];

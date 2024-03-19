@@ -1,0 +1,27 @@
+var class_device =
+[
+    [ "Device", "class_device.html#a8d84aa9972d0761268d42322615c800b", null ],
+    [ "Device", "class_device.html#a9d0546b93a731bc0092b7ccfb532c706", null ],
+    [ "Device", "class_device.html#a7890a4210bd92f8f0cea0f8bf7e3d24c", null ],
+    [ "Device", "class_device.html#a9d0546b93a731bc0092b7ccfb532c706", null ],
+    [ "Device", "class_device.html#a00ff96c2377cceb5e309c80a46e0b441", null ],
+    [ "initialise", "class_device.html#a9e06c42d712367cdf83152122c15e0bb", null ],
+    [ "notUsingInterrupt", "class_device.html#a1241b150c2bb5dc47652cb21868e2aa2", null ],
+    [ "readByte", "class_device.html#a526d29df1e00297536aadbc1313cd612", null ],
+    [ "readBytes", "class_device.html#a6514048115085c3d68570f7a76fb539b", null ],
+    [ "setClock", "class_device.html#a63298063f7c0ce90ede4126297eeb9f3", null ],
+    [ "setI2CAddress", "class_device.html#a4e25a0073cb606d16948f0edc0f4b6d6", null ],
+    [ "usingInterrupt", "class_device.html#ac06f37009d8591ac67f6d8d4b55099b3", null ],
+    [ "writeByte", "class_device.html#ad08474bce51348664cfc560745e37788", null ],
+    [ "address", "class_device.html#a2191d9eb4a7da0350d586e27efd33c59", null ],
+    [ "comms", "class_device.html#aed244c7319081fdd4cfc18be6c2787ca", null ],
+    [ "cs", "class_device.html#ad62e2989fb5406f3deb43bbd790138f4", null ],
+    [ "i2c", "class_device.html#aaf4b08d2d952cc2c586361c8c9149c41", null ],
+    [ "READ_MASK", "class_device.html#a542207bc42dac28b651b753ab2f98d6c", null ],
+    [ "scl", "class_device.html#a6b90d8936395516ceb19882f9a5c29fb", null ],
+    [ "sda", "class_device.html#a51ee5928ad6d20af1226def34609e14e", null ],
+    [ "spi", "class_device.html#ac8cdaeab977d6d4ec5ffedc3b0198c8b", null ],
+    [ "spiClockSpeed", "class_device.html#a675054bfaba9947d4038628ef8ff825e", null ],
+    [ "spiPort", "class_device.html#a7e49b9651d54b67f5bc9307a76836b6e", null ],
+    [ "WRITE_MASK", "class_device.html#a62142a8a11c479eb5e6ca01483652643", null ]
+];

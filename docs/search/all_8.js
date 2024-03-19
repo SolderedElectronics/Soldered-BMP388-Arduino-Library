@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['initializenative_0',['initializenative',['../class_sensor.html#adb537c76173019fddf84b2d89e6c6559',1,'Sensor::initializeNative()'],['../class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998',1,'EasyC::initializeNative()']]]
+  ['hardware_20design_0',['Hardware design',['../index.html#autotoc_md2',1,'']]],
+  ['have_20fun_1',['Have fun!',['../index.html#autotoc_md8',1,'']]],
+  ['headercode_2',['HeaderCode',['../class_b_m_p388___d_e_v.html#a789525aad04d74ffad63ec6f4b90994e',1,'BMP388_DEV']]]
 ];

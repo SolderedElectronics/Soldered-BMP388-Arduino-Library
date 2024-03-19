@@ -1,6 +1,13 @@
 var searchData=
 [
-  ['begin_0',['begin',['../class_easy_c.html#a1b5a82b8a59daea79de76e496457e176',1,'EasyC::begin()'],['../class_easy_c.html#a9e71467da6f38cbe47b10e96694a4f91',1,'EasyC::begin(uint8_t _address)']]],
-  ['begindone_1',['beginDone',['../class_easy_c.html#a2f55de657a84e73edda23dae91d30436',1,'EasyC']]],
-  ['board_20compatibility_2',['Board compatibility',['../index.html#autotoc_md4',1,'']]]
+  ['about_20soldered_0',['About Soldered',['../index.html#autotoc_md5',1,'']]],
+  ['active_5fhigh_1',['ACTIVE_HIGH',['../_b_m_p388___d_e_v_8h.html#a8453dc0b353e1152211a9163e24820daafe240f1952811db0c18b4355fb28190f',1,'BMP388_DEV.h']]],
+  ['active_5flow_2',['ACTIVE_LOW',['../_b_m_p388___d_e_v_8h.html#a8453dc0b353e1152211a9163e24820daa43ad983a1a6a3c04a137ec0471cdfe85',1,'BMP388_DEV.h']]],
+  ['activelevel_3',['ActiveLevel',['../_b_m_p388___d_e_v_8h.html#a8453dc0b353e1152211a9163e24820da',1,'BMP388_DEV.h']]],
+  ['address_4',['address',['../class_device.html#a2191d9eb4a7da0350d586e27efd33c59',1,'Device']]],
+  ['alt_5fdisabled_5',['ALT_DISABLED',['../_b_m_p388___d_e_v_8h.html#aacf5a5de1b44af5e0520c38ee4c528dda37bee17df14683d83eac4766c18a30c0',1,'BMP388_DEV.h']]],
+  ['alt_5fenable_6',['alt_enable',['../class_b_m_p388___d_e_v.html#ab7b58bf97d9cd5d45c0ab3d0172804f0',1,'BMP388_DEV']]],
+  ['alt_5fenabled_7',['ALT_ENABLED',['../_b_m_p388___d_e_v_8h.html#aacf5a5de1b44af5e0520c38ee4c528ddad83e899588a6c192ba4e36bda9ea4f5f',1,'BMP388_DEV.h']]],
+  ['altenable_8',['AltEnable',['../_b_m_p388___d_e_v_8h.html#aacf5a5de1b44af5e0520c38ee4c528dd',1,'BMP388_DEV.h']]],
+  ['arduino_20library_9',['NAZIV PROIZVODA Arduino library',['../index.html',1,'']]]
 ];
