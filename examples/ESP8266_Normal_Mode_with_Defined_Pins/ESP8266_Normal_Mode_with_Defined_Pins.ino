@@ -22,14 +22,17 @@
  * @authors     Borna Biro for soldered.com
  ***************************************************/
 
-// Board select - This example is only compatible with ESP8266 Boards (DasduinoCONNECT)
-#ifdef ARDUINO_ESP8266_GENERIC
-
 // Include Soldered BMP388 library.
 #include <BMP388-SOLDERED.h>
 
+// Board select - This example is only compatible with ESP8266 Boards (DasduinoCONNECT)
+#ifdef ARDUINO_ESP8266_GENERIC
 // Create BMP388 sensor object. Use GPIO14 as SDA and GPIO13 as I2C SCL.
 Soldered_BMP388 bmp388(14, 13, Wire);
+#else
+// If ESP32 is not use, use  default I2C.
+Soldered_BMP388 bmp388;
+#endif
 
 void setup()
 {
@@ -81,5 +84,3 @@ void loop()
     // Wait a little bit.
     delay(250);
 }
-
-#endif
