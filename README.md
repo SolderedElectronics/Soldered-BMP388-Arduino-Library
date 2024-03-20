@@ -1,11 +1,11 @@
-# Pressure & Temperature sensor BMP388 Arduino library
+# Pressure & Temperature sensor BMP388 Breakout Arduino library
 
 [![Make docs and publish to GitHub Pages](https://github.com/SolderedElectronics/Soldered-BMP388-Arduino-Library/actions/workflows/make_docs.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-BMP388-Arduino-Library/actions/workflows/make_docs.yml)
 [![Arduino Library Manager Compatibility](https://github.com/SolderedElectronics/Soldered-BMP388-Arduino-Library/actions/workflows/arduino_lint.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-BMP388-Arduino-Library/actions/workflows/arduino_lint.yml)
 
 | ![Product name](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :------------------------------------------------------------------------------------: |
-|                      [NAZIV PROIZVODA](https://www.solde.red/SKU)                      |
+|                      [Pressure & Temperature sensor BMP388 Breakout](https://www.solde.red/SKU)                      |
 
 OPIS PROIZVODA + LINK NA [easyC ecosystem](https://www.soldered.com/en/easyC).
 
@@ -17,7 +17,7 @@ OPIS PROIZVODA + LINK NA [easyC ecosystem](https://www.soldered.com/en/easyC).
 
 ### Hardware design
 
-You can find hardware design for this board in _NAZIV PROIZVODA_ hardware repository.
+You can find hardware design for this board in Pressure & Temperature sensor BMP388 Breakout hardware repository.
 
 ### Documentation
 
