@@ -20,7 +20,8 @@ var searchData=
   ['setsealevelpressure_17',['setSeaLevelPressure',['../class_b_m_p388___d_e_v.html#a264d101852e43963d8afd3ac55e45e01',1,'BMP388_DEV']]],
   ['settempoversampling_18',['setTempOversampling',['../class_b_m_p388___d_e_v.html#ad9cae979feb0eeb8efdbaeba9674eccc',1,'BMP388_DEV']]],
   ['settimestandby_19',['setTimeStandby',['../class_b_m_p388___d_e_v.html#a5560e27f79f873dfe53e1d34360e586e',1,'BMP388_DEV']]],
-  ['startforcedconversion_20',['startForcedConversion',['../class_b_m_p388___d_e_v.html#a0c428e76757b5c0fdd116a809927d932',1,'BMP388_DEV']]],
-  ['startnormalconversion_21',['startNormalConversion',['../class_b_m_p388___d_e_v.html#a12a95fd0b6774c0ef824de5d6a3eff99',1,'BMP388_DEV']]],
-  ['stopconversion_22',['stopConversion',['../class_b_m_p388___d_e_v.html#aca02c5243132abfd4332282fde3fdefd',1,'BMP388_DEV']]]
+  ['soldered_5fbmp388_20',['Soldered_BMP388',['../class_soldered___b_m_p388.html#add650be648a8a6889150ec4e02b395e7',1,'Soldered_BMP388::Soldered_BMP388(TwoWire &amp;twoWire=Wire)'],['../class_soldered___b_m_p388.html#afab2bb748996af3568141e3f3d915366',1,'Soldered_BMP388::Soldered_BMP388(uint8_t sda, uint8_t scl, TwoWire &amp;twoWire=Wire)'],['../class_soldered___b_m_p388.html#afab2bb748996af3568141e3f3d915366',1,'Soldered_BMP388::Soldered_BMP388(uint8_t sda, uint8_t scl, TwoWire &amp;twoWire=Wire)']]],
+  ['startforcedconversion_21',['startForcedConversion',['../class_b_m_p388___d_e_v.html#a0c428e76757b5c0fdd116a809927d932',1,'BMP388_DEV']]],
+  ['startnormalconversion_22',['startNormalConversion',['../class_b_m_p388___d_e_v.html#a12a95fd0b6774c0ef824de5d6a3eff99',1,'BMP388_DEV']]],
+  ['stopconversion_23',['stopConversion',['../class_b_m_p388___d_e_v.html#aca02c5243132abfd4332282fde3fdefd',1,'BMP388_DEV']]]
 ];

@@ -25,7 +25,7 @@ var searchData=
   ['settimestandby_22',['setTimeStandby',['../class_b_m_p388___d_e_v.html#a5560e27f79f873dfe53e1d34360e586e',1,'BMP388_DEV']]],
   ['sleep_5fmode_23',['SLEEP_MODE',['../_b_m_p388___d_e_v_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911ad1486bda2c3e55fd939260a6b7e38020',1,'BMP388_DEV.h']]],
   ['soldered_24',['About Soldered',['../index.html#autotoc_md5',1,'']]],
-  ['soldered_5fbmp388_25',['Soldered_BMP388',['../class_soldered___b_m_p388.html',1,'']]],
+  ['soldered_5fbmp388_25',['Soldered_BMP388',['../class_soldered___b_m_p388.html',1,'Soldered_BMP388'],['../class_soldered___b_m_p388.html#add650be648a8a6889150ec4e02b395e7',1,'Soldered_BMP388::Soldered_BMP388(TwoWire &amp;twoWire=Wire)'],['../class_soldered___b_m_p388.html#afab2bb748996af3568141e3f3d915366',1,'Soldered_BMP388::Soldered_BMP388(uint8_t sda, uint8_t scl, TwoWire &amp;twoWire=Wire)'],['../class_soldered___b_m_p388.html#afab2bb748996af3568141e3f3d915366',1,'Soldered_BMP388::Soldered_BMP388(uint8_t sda, uint8_t scl, TwoWire &amp;twoWire=Wire)']]],
   ['source_26',['Original source',['../index.html#autotoc_md6',1,'']]],
   ['source_20license_27',['Open-source license',['../index.html#autotoc_md7',1,'']]],
   ['spi_28',['spi',['../class_device.html#ac8cdaeab977d6d4ec5ffedc3b0198c8b',1,'Device']]],
