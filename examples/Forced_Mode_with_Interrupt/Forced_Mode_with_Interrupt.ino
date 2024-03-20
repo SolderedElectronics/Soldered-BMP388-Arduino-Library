@@ -1,39 +1,109 @@
-//////////////////////////////////////////////////////////////////////////////////////////
-// BMP388_DEV - I2C Communications, Default Configuration, Forced Conversion, Interrupt
-//////////////////////////////////////////////////////////////////////////////////////////
+/**
+ **************************************************
+ *
+ * @file        Forced_Mode_with_Interrupt.ino
+ * @brief       This example will show how to use BMP388 sensor with forced mode
+ *              in combination with interrupts. Code will trigger forced measurement
+ *              of the temperature and pressure and instead of waiting for conversion, it will
+ *              receive interrupt event to know that new measurements are ready.
+ *
+ *              This could be usefull for low power devices or to just do something else
+ *              in the code while waiting for new measurement data.
+ *
+ *              You can use easyC for I2C communication and a jumper
+ *              wire for interrupt line.
+ *
+ *              Connect BMP388 INT pin to D2 if using Dasduino Core.
+ *              For other Dasduino boards, you will need to modify
+ *              pinMode and attachInterrupt functions.
+ *
+ *              You will need:
+ *              - BMP388 sensor breakout: https://solde.red/333316
+ *              - easyC cable: https://solde.red/333311
+ *              - Jumper cables: https://solde.red/100862
+ *              - Breadboard: https://solde.red/100871
+ *
+ * @authors     Borna Biro for soldered.com
+ ***************************************************/
 
-#include <BMP388-SOLDERED.h>                           // Include the BMP388_DEV.h library
+// Include Soldered BMP388 library.
+#include <BMP388-SOLDERED.h>
 
+// Flag for interrupt event.
 volatile boolean dataReady = false;
-float temperature, pressure, altitude;
 
-Soldered_BMP388 bmp388;                                // Instantiate (create) a BMP388_DEV object and set-up for I2C operation (address 0x77)
+// Create BMP388 sensor object.
+Soldered_BMP388 bmp388;
 
-void setup() 
+// Interrupt handler function - It's called on interrput event.
+// NOTE: ESP32 and ESP8266 use IRAM for ISR so if you are using ESP32 or ESP8266 uncomment
+// this block of the code...
+IRAM_ATTR void interruptHandler()
 {
-  Serial.begin(115200);                           // Initialise the serial port
-  bmp388.begin();                                 // Default initialisation, place the BMP388 into SLEEP_MODE 
-  bmp388.enableInterrupt();                       // Enable the BMP388's interrupt (INT) pin
-  attachInterrupt(digitalPinToInterrupt(2), interruptHandler, RISING);   // Set interrupt to call interruptHandler function on D2
+    // Set interrupt event flag.
+    dataReady = true;
+}
+// ...and comment this block of code. Otherwise do the opposite.
+// void interruptHandler()
+// {
+//     // Set interrupt event flag.
+//     dataReady = true;
+// }
+
+void setup()
+{
+    // Initialize serial communication at 115200 bauds.
+    Serial.begin(115200);
+
+    // Initialize sensor (check for sensor). Notify if init failed.
+    // Also, this will set BMP388 sensor into sleep mode.
+    if (!bmp388.begin())
+    {
+        // Print error message.
+        Serial.println("Sensor not found! Check your wiring!");
+
+        // Stop the code!
+        while (1)
+        {
+            // Delay for ESP8266.
+            delay(10);
+        }
+    }
+
+    // Set current pressure at sea level to get accurate altitude readings.
+    bmp388.setSeaLevelPressure(1025.0);
+
+    // Enable sensor interrupts.
+    bmp388.enableInterrupt();
+
+    // Connect sensor INT pin to the D2. Call interruptHandler function in case of interrupt event.
+    attachInterrupt(digitalPinToInterrupt(2), interruptHandler, RISING);
 }
 
-void loop() 
+void loop()
 {
-  bmp388.startForcedConversion();                 // Start BMP388 forced conversion (if we're in SLEEP_MODE)
-  if (dataReady)
-  {  
-    bmp388.getMeasurements(temperature, pressure, altitude);      // Read the measurements
-    Serial.print(temperature);                    // Display the results    
-    Serial.print(F("*C   "));
-    Serial.print(pressure);    
-    Serial.print(F("hPa   "));
-    Serial.print(altitude);
-    Serial.println(F("m")); 
-    dataReady = false;                            // Clear the dataReady flag
-  }   
-}
+    // Variables for storing measurement data.
+    float temperature, pressure, altitude;
 
-void interruptHandler()                           // Interrupt handler function
-{
-  dataReady = true;                               // Set the dataReady flag
+    // Make a request for new measurement!
+    bmp388.startForcedConversion();
+
+    // Check if the new data is ready by reading interrupt event flag.
+    // If the flag is set to true - new data is available, read it!
+    if (dataReady)
+    {
+        // Get the new data from the sensor.
+        bmp388.getMeasurements(temperature, pressure, altitude);
+
+        // Print the results!
+        Serial.print(temperature);
+        Serial.print(F("*C   "));
+        Serial.print(pressure);
+        Serial.print(F("hPa   "));
+        Serial.print(altitude);
+        Serial.println(F("m"));
+
+        // Clear the interrupt event flag (to be ready for next measurement).
+        dataReady = false; // Clear the dataReady flag
+    }
 }

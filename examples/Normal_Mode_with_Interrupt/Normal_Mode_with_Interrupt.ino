@@ -16,7 +16,7 @@
  *              pinMode and attachInterrupt functions.
  *
  *              You will need:
- *              - BMP388 sensor breakout: https://solde.red/
+ *              - BMP388 sensor breakout: https://solde.red/333316
  *              - easyC cable: https://solde.red/333311
  *              - Jumper cables: https://solde.red/100862
  *              - Breadboard: https://solde.red/100871
@@ -34,11 +34,19 @@ volatile boolean dataReady = false;
 Soldered_BMP388 bmp388;
 
 // Interrupt handler function - It's called on interrput event.
-void interruptHandler()
+// NOTE: ESP32 and ESP8266 use IRAM for ISR so if you are using ESP32 or ESP8266 uncomment
+// this block of the code...
+IRAM_ATTR void interruptHandler()
 {
     // Set interrupt event flag.
     dataReady = true;
 }
+// ...and comment this block of code. Otherwise do the opposite.
+// void interruptHandler()
+// {
+//     // Set interrupt event flag.
+//     dataReady = true;
+// }
 
 void setup()
 {
@@ -46,7 +54,7 @@ void setup()
     Serial.begin(115200);
 
     // Initialize sensor (check for sensor). Notify if init failed.
-    // Also, set BMP388 sensor into sleep mode.
+    // Also, this will set BMP388 sensor into sleep mode.
     if (!bmp388.begin())
     {
         // Print error message.
@@ -59,6 +67,9 @@ void setup()
             delay(10);
         }
     }
+
+    // Set current pressure at sea level to get accurate altitude readings.
+    bmp388.setSeaLevelPressure(1025.0);
 
     // Enable sensor interrupts.
     bmp388.enableInterrupt();

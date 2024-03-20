@@ -43,7 +43,7 @@
 // Device Communications
 ////////////////////////////////////////////////////////////////////////////////
 
-#if defined ARDUINO_ARCH_ESP8266 || defined ARDUINO_ARCH_ESP32
+#if defined ARDUINO_ESP8266_GENERIC || defined ARDUINO_ESP32_DEV
 enum Comms { I2C_COMMS, SPI_COMMS, I2C_COMMS_DEFINED_PINS };
 #else						 
 enum Comms { I2C_COMMS, SPI_COMMS };		 
@@ -56,16 +56,16 @@ enum Comms { I2C_COMMS, SPI_COMMS };
 class Device{
 	public:
 		Device(TwoWire& twoWire);																		// Device object for I2C operation
-#ifdef ARDUINO_ARCH_ESP8266
+#ifdef ARDUINO_ESP8266_GENERIC
 		Device(uint8_t sda, uint8_t scl, TwoWire& twoWire);					// Device object for ESP8266 I2C operation with user-defined pins
 #endif
 		Device(uint8_t cs);																					// Device object for SPI operation
-#ifdef ARDUINO_ARCH_ESP32
+#ifdef ARDUINO_ESP32_DEV
 		Device(uint8_t sda, uint8_t scl, TwoWire& twoWire);					// Device object for ESP32 I2C operation with user-defined pins
 		Device(uint8_t cs, uint8_t spiPort, SPIClass& spiClass);		// Device object for ESP32 HSPI operation with supplied SPI object
 #endif		
 		void setClock(uint32_t clockSpeed);													// Set the I2C/SPI clock speed
-#if !defined ARDUINO_ARCH_ESP8266 && !defined ARDUINO_ARCH_ESP32 && !defined ARDUINO_SAM_DUE && !defined STM32F1
+#if !defined ARDUINO_ESP8266_GENERIC && !defined ARDUINO_ESP32_DEV && !defined ARDUINO_SAM_DUE && !defined STM32F1
 		void usingInterrupt(uint8_t pinNumber);											// Wrapper for the SPI.usingInterrupt() function
 		void notUsingInterrupt(uint8_t pinNumber);									// Wrapper for the SPI.notUsingInterrupt() function
 #endif
@@ -79,7 +79,7 @@ class Device{
 		Comms comms;																								// Communications bus: I2C or SPI
 		uint8_t address;																						// The device I2C address
 		uint8_t cs;																									// The SPI chip select pin
-#ifdef ARDUINO_ARCH_ESP32
+#ifdef ARDUINO_ESP32_DEV
 		uint8_t spiPort;																						// SPI port type VSPI or HSPI
 #endif
 		TwoWire* i2c;																								// Pointer to the Wire class
@@ -87,7 +87,7 @@ class Device{
 		uint32_t spiClockSpeed;																			// The SPI clock speed		
 		const uint8_t WRITE_MASK = 0x7F;														// Sub-address write mask for SPI communications
 		const uint8_t READ_MASK  = 0x80;														// Sub-address read mask for SPI communications
-#if defined ARDUINO_ARCH_ESP8266 || defined ARDUINO_ARCH_ESP32
+#if defined ARDUINO_ESP8266_GENERIC || defined ARDUINO_ESP32_DEV
 		uint8_t sda, scl;																						// Software I2C SDA and SCL pins 
 #endif
 };

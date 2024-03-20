@@ -1,17 +1,23 @@
 /**
  **************************************************
  *
- * @file        Normal_Mode.ino
- * @brief       This example will show basic usage of the BMP388
- *              sensor. It will periodically read BMP388 for new
- *              measured data.
+ * @file        ESP8266_Normal_Mode_with_Defined_Pins.ino
+ * @brief       This example shows how to use ESP8266 (Soldered DasduinoCONNECT) with this sensor.
+ *              Since ESP8266 has SW driven I2C, it can have I2C on almost any GPIO.
+ *              This could be useful if there are device with the same I2C address as this sensor on
+ *              default I2C pins.
  *
- *              Connect easyC cable to sensor and Dasduino board, upload
- *              the code and open serial monitor.
+ *              Using jumper wires, connect:
+ *                 BMP388                   DasduinoCONNECT
+ *                    GND <---------------> GND
+ *                    VCC <---------------> VCC
+ *                    SDA <---------------> GPIO14
+ *                    SCL <---------------> GPIO13
  *
  *              You will need:
  *              - BMP388 sensor breakout: https://solde.red/333316
- *              - easyC cable: https://solde.red/333311
+ *              - Jumper cables: https://solde.red/100862
+ *              - Breadboard: https://solde.red/100871
  *
  * @authors     Borna Biro for soldered.com
  ***************************************************/
@@ -19,8 +25,8 @@
 // Include Soldered BMP388 library.
 #include <BMP388-SOLDERED.h>
 
-// Create BMP388 sensor object.
-Soldered_BMP388 bmp388;
+// Create BMP388 sensor object. Use GPIO14 as SDA and GPIO13 as I2C SCL.
+Soldered_BMP388 bmp388(14, 13, Wire);
 
 void setup()
 {

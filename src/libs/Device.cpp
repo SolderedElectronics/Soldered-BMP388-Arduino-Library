@@ -39,12 +39,12 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 Device::Device(TwoWire& twoWire) : comms(I2C_COMMS), i2c(&twoWire) {}								// Initialise constructor for I2C communications
-#ifdef ARDUINO_ARCH_ESP8266
+#ifdef ARDUINO_ESP8266_GENERIC
 Device::Device(uint8_t sda, uint8_t scl, TwoWire& twoWire) : 												// Constructor for ESP8266 I2C with user-defined pins
 	comms(I2C_COMMS_DEFINED_PINS), i2c(&twoWire), sda(sda), scl(scl) {}	
 #endif
 Device::Device(uint8_t cs) : comms(SPI_COMMS), cs(cs), spiClockSpeed(1000000) {}		// Constructor for SPI communications
-#ifdef ARDUINO_ARCH_ESP32																														
+#ifdef ARDUINO_ESP32_DEV																														
 Device::Device(uint8_t sda, uint8_t scl, TwoWire& twoWire) : 												// Constructor for ESP32 I2C with user-defined pins
 	comms(I2C_COMMS_DEFINED_PINS), i2c(&twoWire), sda(sda), scl(scl) {}	
 Device::Device(uint8_t cs, uint8_t spiPort, SPIClass& spiClass) 										// Constructor for ESP32 HSPI communications
@@ -67,7 +67,7 @@ void Device::setClock(uint32_t clockSpeed)													// Set the I2C or SPI clo
 	}
 }
 
-#if !defined ARDUINO_ARCH_ESP8266 && !defined ARDUINO_ARCH_ESP32 && !defined ARDUINO_SAM_DUE && !defined STM32F1
+#if !defined ARDUINO_ESP8266_GENERIC && !defined ARDUINO_ESP32_DEV && !defined ARDUINO_SAM_DUE && !defined STM32F1
 void Device::usingInterrupt(uint8_t pinNumber)											// Wrapper for the SPI usingInterrupt() function
 {
 	spi->usingInterrupt(pinNumber);
@@ -90,7 +90,7 @@ void Device::initialise()																						// Initialise device communicatio
 		i2c->begin();																										// Initialise I2C communication
 		i2c->setClock(400000);																					// Set the SCL clock to default of 400kHz
 	}
-#if defined ARDUINO_ARCH_ESP8266 || defined ARDUINO_ARCH_ESP32
+#if defined ARDUINO_ESP8266_GENERIC || defined ARDUINO_ESP32_DEV
 	else if (comms == I2C_COMMS_DEFINED_PINS)													// Check if the ESP8266 has specified user-defined I2C pins
 	{
 		i2c->begin(sda, scl);																						// Initialise I2C communication with user-defined pins
@@ -102,7 +102,7 @@ void Device::initialise()																						// Initialise device communicatio
 	{
 		digitalWrite(cs, HIGH);																					// Pull the chip select (CS) pin high
 		pinMode(cs, OUTPUT);																						// Set-up the SPI chip select pin
-#ifdef ARDUINO_ARCH_ESP32
+#ifdef ARDUINO_ESP32_DEV
 		if (spiPort == HSPI)																						// Set-up spi pointer for VSPI or HSPI communications
 		{
 			spi->begin(14, 27, 13, 2);																		// Start HSPI on SCK 14, MOSI 13, MISO 24, SS CS (GPIO2 acts as dummy pin)
