@@ -39,7 +39,6 @@ class Soldered_BMP388 : public BMP388_DEV
     uint8_t begin();
 
   protected:
-
   private:
 };
 
