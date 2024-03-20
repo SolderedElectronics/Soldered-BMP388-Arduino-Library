@@ -23,7 +23,7 @@ You can find hardware design for this board in Pressure & Temperature sensor BMP
 
 Access Arduino library documentation [here](https://SolderedElectronics.github.io/Soldered-BMP388-Arduino-Library/).
 
-- Tutorial for using the NAZIV PROIZVODA board
+- Tutorial for using the Pressure & Temperature sensor BMP388 Breakout board
 - Installing an Arduino library
 
 ### Board compatibility
