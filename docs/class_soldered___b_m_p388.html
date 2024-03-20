@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>16x2 easyC LCD Library: Soldered_BMP388 Class Reference</title>
+<title>Soldered BMP388 Arduino Library: Soldered_BMP388 Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,9 +30,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">16x2 easyC LCD Library<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Soldered BMP388 Arduino Library<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">This is a library for the 16x2 easyC LCD Module</div>
+   <div id="projectbrief">Soldered Arduino library for BMP388 sensor breakout.</div>
   </td>
  </tr>
  </tbody>
@@ -115,7 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afab2bb748996af3568141e3f3d915366" id="r_afab2bb748996af3568141e3f3d915366"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afab2bb748996af3568141e3f3d915366">Soldered_BMP388</a> (uint8_t <a class="el" href="class_device.html#a51ee5928ad6d20af1226def34609e14e">sda</a>, uint8_t <a class="el" href="class_device.html#a6b90d8936395516ceb19882f9a5c29fb">scl</a>, TwoWire &amp;twoWire=Wire)</td></tr>
 <tr class="separator:afab2bb748996af3568141e3f3d915366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2d331ff98848f311907e68e68e5af55" id="r_ac2d331ff98848f311907e68e68e5af55"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2d331ff98848f311907e68e68e5af55">begin</a> ()</td></tr>
-<tr class="memdesc:ac2d331ff98848f311907e68e68e5af55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sensor specific native constructor.  <br /></td></tr>
+<tr class="memdesc:ac2d331ff98848f311907e68e68e5af55"><td class="mdescLeft">&#160;</td><td class="mdescRight">BMP388 library initializer function.  <br /></td></tr>
 <tr class="separator:ac2d331ff98848f311907e68e68e5af55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_b_m_p388___d_e_v"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_b_m_p388___d_e_v')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_b_m_p388___d_e_v.html">BMP388_DEV</a></td></tr>
 <tr class="memitem:a3571d4b5b4654ee4e14292a7723c67a3 inherit pub_methods_class_b_m_p388___d_e_v" id="r_a3571d4b5b4654ee4e14292a7723c67a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_m_p388___d_e_v.html#a3571d4b5b4654ee4e14292a7723c67a3">BMP388_DEV</a> (TwoWire &amp;twoWire=Wire)</td></tr>
@@ -356,13 +356,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sensor specific native constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">int</td><td>_pin Example parameter. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>BMP388 library initializer function. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint8_t - Success initializaton of the sensor. 1 - Sensor successfully initialized. 0 - Sensor initialization falied. </dd></dl>
 
 </div>
 </div>
@@ -378,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
     <ul>
         <li class="navelem"><a class="el" href="class_soldered___b_m_p388.html">Soldered_BMP388</a></li>
         <li class="footer">
-            Generated on Wed Mar 20 2024 11:01:01 for 16x2 easyC LCD Library by <a href="http://www.doxygen.org/index.html">
+            Generated on Wed Mar 20 2024 11:14:30 for Soldered BMP388 Arduino Library by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.10.0.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.

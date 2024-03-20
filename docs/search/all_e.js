@@ -19,7 +19,7 @@ var searchData=
   ['press_5fen_16',['press_en',['../class_b_m_p388___d_e_v.html#a69302a6f8028985d9055882037392808',1,'BMP388_DEV']]],
   ['press_5fenabled_17',['PRESS_ENABLED',['../_b_m_p388___d_e_v_8h.html#a0ef84b679d905f9de9cc3ce930e46d4caf6155f5b05768264b46245a8b29a3480',1,'BMP388_DEV.h']]],
   ['pressenable_18',['PressEnable',['../_b_m_p388___d_e_v_8h.html#a0ef84b679d905f9de9cc3ce930e46d4c',1,'BMP388_DEV.h']]],
-  ['proizvoda_20arduino_20library_19',['NAZIV PROIZVODA Arduino library',['../index.html',1,'']]],
+  ['pressure_20temperature_20sensor_20bmp388_20arduino_20library_19',['Pressure &amp; Temperature sensor BMP388 Arduino library',['../index.html',1,'']]],
   ['push_5fpull_20',['PUSH_PULL',['../_b_m_p388___d_e_v_8h.html#a2bf75346f5442cc486bad247a6d9c484aea46e9bba1ef3eb31a3fbce1b54ef028',1,'BMP388_DEV.h']]],
   ['pwr_5fctrl_21',['pwr_ctrl',['../class_b_m_p388___d_e_v.html#aa90a91201ee1c783845d319366bcad15',1,'BMP388_DEV']]]
 ];
