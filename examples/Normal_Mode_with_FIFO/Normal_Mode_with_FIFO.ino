@@ -13,7 +13,7 @@
  *              results should show.
  *
  *              You will need:
- *              - BMP388 sensor breakout: https://solde.red/
+ *              - BMP388 sensor breakout: https://solde.red/333316
  *              - easyC cable: https://solde.red/333311
  *
  * @authors     Borna Biro for soldered.com
@@ -34,7 +34,7 @@ void setup()
     Serial.begin(115200);
 
     // Initialize sensor (check for sensor). Notify if init failed.
-    // Also, set BMP388 sensor into sleep mode.
+    // Also, this will set BMP388 sensor into sleep mode.
     if (!bmp388.begin())
     {
         // Print error message.
@@ -47,6 +47,9 @@ void setup()
             delay(10);
         }
     }
+
+    // Set current pressure at sea level to get accurate altitude readings.
+    bmp388.setSeaLevelPressure(1025.0);
 
     // Enable the BMP388's FIFO.
     bmp388.enableFIFO();
