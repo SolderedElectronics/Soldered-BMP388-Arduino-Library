@@ -34,19 +34,20 @@ volatile boolean dataReady = false;
 Soldered_BMP388 bmp388;
 
 // Interrupt handler function - It's called on interrput event.
-// NOTE: ESP32 and ESP8266 use IRAM for ISR so if you are using ESP32 or ESP8266 uncomment
-// this block of the code...
+// NOTE: ESP32 and ESP8266 use IRAM for ISR so it needs to be specified.
+#if defined(ARDUINO_ESP32_DEV) || defined(ARDUINO_ESP8266_GENERIC)
 IRAM_ATTR void interruptHandler()
 {
     // Set interrupt event flag.
     dataReady = true;
 }
-// ...and comment this block of code. Otherwise do the opposite.
-// void interruptHandler()
-// {
-//     // Set interrupt event flag.
-//     dataReady = true;
-// }
+#else
+void interruptHandler()
+{
+    // Set interrupt event flag.
+    dataReady = true;
+}
+#endif
 
 void setup()
 {

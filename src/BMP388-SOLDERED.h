@@ -23,23 +23,17 @@
 class Soldered_BMP388 : public BMP388_DEV
 {
   public:
-    Soldered_BMP388(TwoWire &twoWire = Wire) : BMP388_DEV(twoWire)
-    {
-    }
+
+    Soldered_BMP388(TwoWire &twoWire = Wire) : BMP388_DEV(twoWire) {}
 #ifdef ARDUINO_ESP8266_GENERIC
-    Soldered_BMP388(uint8_t sda, uint8_t scl, TwoWire &twoWire = Wire) : BMP388_DEV(sda, scl, twoWire)
-    {
-    }
+    Soldered_BMP388(uint8_t sda, uint8_t scl, TwoWire &twoWire = Wire) : BMP388_DEV(sda, scl, twoWire) {}
 #endif
 #ifdef ARDUINO_ESP32_DEV
-    Soldered_BMP388(uint8_t sda, uint8_t scl, TwoWire &twoWire = Wire) : BMP388_DEV(sda, scl, twoWire)
-    {
-    }
+    Soldered_BMP388(uint8_t sda, uint8_t scl, TwoWire &twoWire = Wire) : BMP388_DEV(sda, scl, twoWire) {}
 #endif
     uint8_t begin();
 
   protected:
-
   private:
 };
 
