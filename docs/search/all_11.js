@@ -1,7 +1,7 @@
 var searchData=
 [
   ['temp_5fen_0',['temp_en',['../class_b_m_p388___d_e_v.html#aa1f75f8dc6138b52d71e64017636f497',1,'BMP388_DEV']]],
-  ['temperature_20sensor_20bmp388_20arduino_20library_1',['Pressure &amp; Temperature sensor BMP388 Arduino library',['../index.html',1,'']]],
+  ['temperature_20sensor_20bmp388_20breakout_20arduino_20library_1',['Pressure &amp; Temperature sensor BMP388 Breakout Arduino library',['../index.html',1,'']]],
   ['time_5fdisabled_2',['TIME_DISABLED',['../_b_m_p388___d_e_v_8h.html#aba7d8a6c19f86720872ca0e0ea85a694aefd672c5347321b15418e4928a124bdd',1,'BMP388_DEV.h']]],
   ['time_5fenabled_3',['TIME_ENABLED',['../_b_m_p388___d_e_v_8h.html#aba7d8a6c19f86720872ca0e0ea85a694a0d731d4936342722621100f885a9a27f',1,'BMP388_DEV.h']]],
   ['time_5fstandby_5f10240ms_4',['TIME_STANDBY_10240MS',['../_b_m_p388___d_e_v_8h.html#a104744726b93171a5d4cc49d1b1b1c0da277e854300181451b6429b9ed56f14f3',1,'BMP388_DEV.h']]],

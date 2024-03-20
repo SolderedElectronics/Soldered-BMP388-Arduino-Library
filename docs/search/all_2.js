@@ -2,7 +2,7 @@ var searchData=
 [
   ['begin_0',['begin',['../class_soldered___b_m_p388.html#ac2d331ff98848f311907e68e68e5af55',1,'Soldered_BMP388::begin()'],['../class_b_m_p388___d_e_v.html#ac0cdef635a600ba7beaf98bdeb20aaae',1,'BMP388_DEV::begin(Mode mode=SLEEP_MODE, Oversampling presOversampling=OVERSAMPLING_X16, Oversampling tempOversampling=OVERSAMPLING_X2, IIRFilter iirFilter=IIR_FILTER_OFF, TimeStandby timeStandby=TIME_STANDBY_5MS)'],['../class_b_m_p388___d_e_v.html#ae6eb1e842bf2964732616731378d2a8d',1,'BMP388_DEV::begin(Mode mode, uint8_t addr)'],['../class_b_m_p388___d_e_v.html#a9a919850929834f1c9cd37931d997811',1,'BMP388_DEV::begin(uint8_t addr)']]],
   ['bit_1',['bit',['../class_b_m_p388___d_e_v.html#abd2953a68e836712254e47bcb2fa80c6',1,'BMP388_DEV::bit'],['../class_b_m_p388___d_e_v.html#a058db7ef5b3389db57087d67c70449f4',1,'BMP388_DEV::bit'],['../class_b_m_p388___d_e_v.html#a4757d998e2e2050597bbab4f75418abb',1,'BMP388_DEV::bit'],['../class_b_m_p388___d_e_v.html#abd8e369f9363c0ff5cd0aac1ebf340ee',1,'BMP388_DEV::bit'],['../class_b_m_p388___d_e_v.html#ab972baab26a2cb75219be145ebcf4f47',1,'BMP388_DEV::bit'],['../class_b_m_p388___d_e_v.html#ac90fe66de4b9a008cab56a335d3bbf3c',1,'BMP388_DEV::bit'],['../class_b_m_p388___d_e_v.html#a245f7f91ba0930df5f69499a13970f22',1,'BMP388_DEV::bit'],['../class_b_m_p388___d_e_v.html#a56b74ad1f43fa3e56888a4c325a4e8a1',1,'BMP388_DEV::bit'],['../class_b_m_p388___d_e_v.html#aa45f322b470264995e232f8035ffdbb6',1,'BMP388_DEV::bit'],['../class_b_m_p388___d_e_v.html#ab4291771b195d1c70e34192b447e1454',1,'BMP388_DEV::bit'],['../class_b_m_p388___d_e_v.html#af6eea3ce70ad9e919db2d95b12fa4ba2',1,'BMP388_DEV::bit']]],
-  ['bmp388_20arduino_20library_2',['Pressure &amp; Temperature sensor BMP388 Arduino library',['../index.html',1,'']]],
+  ['bmp388_20breakout_20arduino_20library_2',['Pressure &amp; Temperature sensor BMP388 Breakout Arduino library',['../index.html',1,'']]],
   ['bmp388_2dsoldered_2ecpp_3',['BMP388-SOLDERED.cpp',['../_b_m_p388-_s_o_l_d_e_r_e_d_8cpp.html',1,'']]],
   ['bmp388_2dsoldered_2eh_4',['BMP388-SOLDERED.h',['../_b_m_p388-_s_o_l_d_e_r_e_d_8h.html',1,'']]],
   ['bmp388_5fchip_5fid_5',['BMP388_CHIP_ID',['../_b_m_p388___d_e_v_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa1053ca3cf3ab5a1cf63c84450db113b',1,'BMP388_DEV.h']]],
@@ -42,5 +42,6 @@ var searchData=
   ['bmp388_5fspi1_39',['BMP388_SPI1',['../_b_m_p388___d_e_v_8h.html#a8b11af9478a385bfe25c725e658b0800ade408b37515c0308ab20a4907e3c3fff',1,'BMP388_DEV.h']]],
   ['bmp388_5fstatus_40',['BMP388_STATUS',['../_b_m_p388___d_e_v_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba9b5cf8cdaa1605fafd57f86d14c604dd',1,'BMP388_DEV.h']]],
   ['bmp388_5ftrim_5fparams_41',['BMP388_TRIM_PARAMS',['../_b_m_p388___d_e_v_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba422d224aa1c7a81a63f881b3f81e52b4',1,'BMP388_DEV.h']]],
-  ['board_20compatibility_42',['Board compatibility',['../index.html#autotoc_md4',1,'']]]
+  ['board_20compatibility_42',['Board compatibility',['../index.html#autotoc_md4',1,'']]],
+  ['breakout_20arduino_20library_43',['Pressure &amp; Temperature sensor BMP388 Breakout Arduino library',['../index.html',1,'']]]
 ];

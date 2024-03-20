@@ -12,5 +12,5 @@ var searchData=
   ['alt_5fenabled_9',['ALT_ENABLED',['../_b_m_p388___d_e_v_8h.html#aacf5a5de1b44af5e0520c38ee4c528ddad83e899588a6c192ba4e36bda9ea4f5f',1,'BMP388_DEV.h']]],
   ['altenable_10',['AltEnable',['../_b_m_p388___d_e_v_8h.html#aacf5a5de1b44af5e0520c38ee4c528dd',1,'BMP388_DEV.h']]],
   ['arduino_20compatibility_20strong_11',['&lt;strong&gt;Arduino Compatibility&lt;/strong&gt;',['..//github/workspace/gh-pages/src/libs/README.md#autotoc_md13',1,'']]],
-  ['arduino_20library_12',['Pressure &amp; Temperature sensor BMP388 Arduino library',['../index.html',1,'']]]
+  ['arduino_20library_12',['Pressure &amp; Temperature sensor BMP388 Breakout Arduino library',['../index.html',1,'']]]
 ];

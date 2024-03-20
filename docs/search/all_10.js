@@ -3,7 +3,7 @@ var searchData=
   ['scl_0',['scl',['../class_device.html#a6b90d8936395516ceb19882f9a5c29fb',1,'Device']]],
   ['sda_1',['sda',['../class_device.html#a51ee5928ad6d20af1226def34609e14e',1,'Device']]],
   ['sea_5flevel_5fpressure_2',['sea_level_pressure',['../class_b_m_p388___d_e_v.html#a40231dfe07872837c5b16ee744b530c0',1,'BMP388_DEV']]],
-  ['sensor_20bmp388_20arduino_20library_3',['Pressure &amp; Temperature sensor BMP388 Arduino library',['../index.html',1,'']]],
+  ['sensor_20bmp388_20breakout_20arduino_20library_3',['Pressure &amp; Temperature sensor BMP388 Breakout Arduino library',['../index.html',1,'']]],
   ['setclock_4',['setClock',['../class_device.html#a63298063f7c0ce90ede4126297eeb9f3',1,'Device']]],
   ['setfifodataselect_5',['setFIFODataSelect',['../class_b_m_p388___d_e_v.html#a7679cd82b81189f8f920e5783436f94b',1,'BMP388_DEV']]],
   ['setfifonoofmeasurements_6',['setFIFONoOfMeasurements',['../class_b_m_p388___d_e_v.html#a4be2afe8feb8a6cda3b59a31864a614d',1,'BMP388_DEV']]],
