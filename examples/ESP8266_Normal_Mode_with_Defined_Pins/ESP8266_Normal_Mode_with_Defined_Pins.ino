@@ -22,6 +22,9 @@
  * @authors     Borna Biro for soldered.com
  ***************************************************/
 
+// Board select - This example is only compatible with ESP8266 Boards (DasduinoCONNECT)
+#ifdef ARDUINO_ESP8266_GENERIC
+
 // Include Soldered BMP388 library.
 #include <BMP388-SOLDERED.h>
 
@@ -78,3 +81,5 @@ void loop()
     // Wait a little bit.
     delay(250);
 }
+
+#endif
