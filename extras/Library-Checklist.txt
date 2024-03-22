@@ -54,11 +54,11 @@
 ✅ | Update @authors to your name in all source files (search and replace in vsc works fine)
 ✅ | Push to dev
     | Check if Github Actions made a push to main
-❌ | Set GitHub pages settings
+✅ | Set GitHub pages settings
     | Visit https://github.com/SolderedElectronics/[repo name]/settings/pages
     | Change to gh-pages branch and /docs folder
-❌ | Check if docs are made correctly
-❌ | Check if Board Compatibility test is passing for all boards
-❌ | Check if Arduino Library Manager Compatibility Test is passing
-❌ | Make a release with version 1.0.0
+✅ | Check if docs are made correctly
+✅ | Check if Board Compatibility test is passing for all boards
+✅ | Check if Arduino Library Manager Compatibility Test is passing
+✅ | Make a release with version 1.0.0
 ❌ | PR to Arduino Library Manager if not done already
