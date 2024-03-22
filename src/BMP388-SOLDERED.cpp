@@ -21,6 +21,6 @@
  */
 uint8_t Soldered_BMP388::begin()
 {
-    // Call libraryspecific init. function with 0x76 I2C address.
+    // Call library specific init. function with 0x76 I2C address.
     return BMP388_DEV::begin(BMP388_I2C_ALT_ADDR);
 }
