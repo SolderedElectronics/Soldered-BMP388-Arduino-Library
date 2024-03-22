@@ -5,7 +5,7 @@
 
 | ![Product name](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :------------------------------------------------------------------------------------: |
-|                      [Pressure & Temperature sensor BMP388 Breakout](https://www.solde.red/SKU)                      |
+|                      [Pressure & Temperature sensor BMP388 Breakout](https://www.solde.red/333316)                      |
 
 OPIS PROIZVODA + LINK NA [easyC ecosystem](https://www.soldered.com/en/easyC).
 
@@ -17,7 +17,7 @@ OPIS PROIZVODA + LINK NA [easyC ecosystem](https://www.soldered.com/en/easyC).
 
 ### Hardware design
 
-You can find hardware design for this board in Pressure & Temperature sensor BMP388 Breakout hardware repository.
+You can find hardware design for this board in _Pressure & Temperature sensor BMP388 Breakout_ hardware repository.
 
 ### Documentation
 

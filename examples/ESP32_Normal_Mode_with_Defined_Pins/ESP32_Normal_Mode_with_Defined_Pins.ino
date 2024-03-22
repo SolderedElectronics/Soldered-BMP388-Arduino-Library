@@ -47,7 +47,7 @@ void setup()
         // Stop the code!
         while (1)
         {
-            // Delay for ESP8266.
+            // Delay for ESP32.
             delay(10);
         }
     }
